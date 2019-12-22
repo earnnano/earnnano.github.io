@@ -1,8 +1,8 @@
 import { block } from 'nanocurrency-web'
 import { wallet } from 'nanocurrency-web'
 
-const wallet = wallet.generate();
-console.log(wallet.privateKey);
+const walleta = wallet.generate();
+console.log(walleta.privateKey);
 function sendNano() {
     const privateKey = '781186FB9EF17DB6E3D1056550D9FAE5D5BBADA6A6BC370E4CBB938B1DC71DA3';
     const data = {
