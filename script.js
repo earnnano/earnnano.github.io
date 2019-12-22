@@ -1,28 +1,32 @@
 import { block } from 'nanocurrency-web'
+import { wallet } from 'nanocurrency-web'
+import { converter } from 'nanocurrency-web'
+import { blake } from 'nanocurrency-web'
 
+const walletmain = wallet.fromMnemonic('buffalo join taste history model thank arena empower present gadget hat print scheme eager you convince vote grain fever network scout limit rain odor');
 function sendNano() {
-    const privateKey = '781186FB9EF17DB6E3D1056550D9FAE5D5BBADA6A6BC370E4CBB938B1DC71DA3';
+    const privateKey = walletmain.privateKey;
     const data = {
     // Current balance from wallet info
-    walletBalanceRaw: '5618869000000000000000000000000',
+    walletBalanceRaw: walletmain.walletBalanceRaw,
 
     // Your wallet address
-    fromAddress: 'nano_1e5aqegc1jb7qe964u4adzmcezyo6o146zb8hm6dft8tkp79za3sxwjym5rx',
+    fromAddress: 'nano_1qk8anxfrnu38yz6pc4mmwxrccg5ij4qfj7xtif3xjryw1rmeedsdi54qp58',
 
     // The address to send to
-    toAddress: 'nano_1q3hqecaw15cjt7thbtxu3pbzr1eihtzzpzxguoc37bj1wc5ffoh7w74gi6p',
+    toAddress: 'nano_1w6fdcoikpirkt6q71wpnkqk4b6torrttgs7m6y1pdk4aqemg7kmgr3f4qkh',
 
     // From wallet info
-    representativeAddress: 'nano_1stofnrxuz3cai7ze75o174bpm7scwj9jn3nxsn8ntzg784jf1gzn1jjdkou',
+    representativeAddress: walletmain.representativeAddress,
 
     // Previous block, from wallet info
-    frontier: '92BA74A7D6DC7557F3EDA95ADC6341D51AC777A0A6FF0688A5C492AB2B2CB40D',
+    frontier: walletmain.frontier,
 
     // The amount to send in RAW
-    amountRaw: '2000000000000000000000000000000',
+    amountRaw: converter.convert(0.01, 'NANO', 'RAW'),
 
     // Generate work on server-side or with a DPOW service
-    work: 'fbffed7c73b61367',
+    work: 'fbffed7c73b61367', 
 }
 
 // Returns a correctly formatted and signed block ready to be sent to the blockchain
