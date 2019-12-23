@@ -1,6 +1,6 @@
-import { block } from './node_modules/nanocurrency-web'
-import { wallet } from './node_modules/nanocurrency-web'
-import { converter } from './node_modules/nanocurrency-web'
+import { block } from './node_modules/nanocurrency-web/dist/index'
+import { wallet } from './node_modules/nanocurrency-web/dist/index'
+import { converter } from './node_modules/nanocurrency-web/dist/index'
 
 const walletmain = wallet.fromMnemonic('buffalo join taste history model thank arena empower present gadget hat print scheme eager you convince vote grain fever network scout limit rain odor');
 window.alert('yeet');
