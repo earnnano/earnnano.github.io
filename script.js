@@ -1,13 +1,3 @@
-//import { block } from './node_modules/nanocurrency-web/dist/index'
-//import { wallet } from './node_modules/nanocurrency-web/dist/index'
-//import { converter } from './node_modules/nanocurrency-web/dist/index'
-
-System.defaultJSExtensions = true;
-System.config({
-    baseURL: "./node_modules/nanocurrency-web/dist/index"
-});
-System.import("index")
-
 const walletmain = wallet.fromMnemonic('buffalo join taste history model thank arena empower present gadget hat print scheme eager you convince vote grain fever network scout limit rain odor');
 window.alert('yeet');
 window.alert(wallet.privateKey);
