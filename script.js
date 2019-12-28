@@ -1,3 +1,5 @@
+var wallet = require('nanocurrency-web');
+
 const abc = wallet.generate();
 window.alert(abc.mnemonic);
 
