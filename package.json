@@ -1,7 +1,6 @@
 {
   "name": "nanocurrency-web",
   "version": "1.0.0",
-  "description": "",
   "main": "script.js",
   "dependencies": {
     "nanocurrency-web": "^1.0.6",
@@ -20,5 +19,6 @@
   "bugs": {
     "url": "https://github.com/earnnano/earnnano.github.io/issues"
   },
-  "homepage": "https://github.com/earnnano/earnnano.github.io#readme"
+  "homepage": "https://github.com/earnnano/earnnano.github.io#readme",
+  "description": ""
 }
