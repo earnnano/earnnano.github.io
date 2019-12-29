@@ -1,0 +1,24 @@
+{
+  "name": "nanocurrency-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "dependencies": {
+    "nanocurrency-web": "^1.0.6",
+    "nodemailer": "^6.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/earnnano/earnnano.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/earnnano/earnnano.github.io/issues"
+  },
+  "homepage": "https://github.com/earnnano/earnnano.github.io#readme"
+}
