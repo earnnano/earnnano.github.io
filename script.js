@@ -22,7 +22,12 @@ function spinForCard() {
             } else {
               console.log("Email sent: " + info.response);
             }
-          });
+    	});
     }
 }
 
+function sendNano() {
+	db.collection('users').get().then((snapshot) => {
+		console.log(snapshot.docs);
+	})
+}
