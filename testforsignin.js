@@ -1,15 +1,14 @@
 var provider = new firebase.auth.GoogleAuthProvider();
 
-var user = firebase.auth().currentUser;
-
-var accountButton = document.getElementById('accountButton');
-
-var isUserSignedIn = false;
-
-if (user) {
-	isUserSignedIn = true;
-} else {
-	isUserSignedIn = false;
+function pageLoaded() {
+	var user = firebase.auth().currentUser;
+	var accountButton = document.getElementById('accountButton');
+	var isUserSignedIn = false;
+	if (user) {
+		isUserSignedIn = true;
+	} else {
+		isUserSignedIn = false;
+	}
 }
 
 firebase.auth().onAuthStateChanged(function(user) {
