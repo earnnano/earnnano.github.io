@@ -17,9 +17,19 @@ p, input {
 
 .topbarButton {
     background-color: #dddddd;
-    border: black 2px;
+	border: black 2px;
 }
 
 .topbarButton:hover {
     background-color : #cccccc;
+}
+
+.menuButton {
+	width:200px;
+	height:50px;
+}
+
+.accountButton {
+	width:100px;
+	height:20px;
 }
