@@ -1,8 +1,4 @@
-
-var nodemailer = require("nodemailer");
-
-function spinForCard(yeet) {
-  console.log(yeet.toString());
+function spinForCard() {
     var randNum = Math.round(Math.random());
     if(randNum === 666 || randNum === 69 || randNum === 420 || randNum === 9001 || randNum === 1) {
         var email = window.prompt("You won a $1 Amazon Gift Card!\nEnter your email below to recieve your GC code. (it can take up to 24 hours)");
