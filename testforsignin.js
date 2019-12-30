@@ -24,7 +24,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 
 function updateUserInfo() {
 	if(isUserSignedIn) {
-		accountButton.innerHTML = 'Sign Out (' + user.DisplayName.toString().split(' ')[0] + ')';
+		accountButton.innerHTML = 'Sign Out (' + user.DisplayName.split(' ')[0] + ')';
 	} else {
 		accountButton.innerHTML = 'Sign In';
 	}
