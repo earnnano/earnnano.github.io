@@ -15,7 +15,6 @@ function pageLoad() {
 firebase.auth().onAuthStateChanged(function(user) {
 	if (user) {
 		isUserSignedIn = true;
-		window.alert(user.getDisplayName());
 	} else {
 		isUserSignedIn = false;
 	}
