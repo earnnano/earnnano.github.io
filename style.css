@@ -1,3 +1,13 @@
 p, input {
     font-family:Arial, Helvetica, sans-serif;
 }
+
+#googleSignInButton {
+    width:191px;
+    height:46px;
+    background-image:'btn_google_signin_dark_normal_web.png';
+}
+
+#googleSignInButton:hover {
+    background-image:'btn_google_signin_dark_focus_web.png';
+}
