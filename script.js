@@ -26,8 +26,6 @@ function spinForCard() {
     }
 }
 
-const db = firebase.firestore();
-
 function sendNano() {
 	db.collection('users').get().then((snapshot) => {
 		console.log(snapshot.docs);
