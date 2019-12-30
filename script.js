@@ -27,7 +27,12 @@ function spinForCard() {
 }
 
 function sendNano() {
-	db.collection('users').get().then((snapshot) => {
-		console.log(snapshot.docs);
+	var users = db.collection('users');
+	users.doc('ExampleUID').get().then(function(doc) {
+		if(doc.exists) {
+			console.log(doc.data);
+		} else {
+			console.log('doc doesnt exist lmao ur dumb');
+		}
 	})
 }
