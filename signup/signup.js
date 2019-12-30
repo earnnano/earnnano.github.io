@@ -6,8 +6,9 @@ function load() {
     // The signed-in user info.
     var user = result.user;
     // ...
-    window.alert(user.email);
     window.alert(user.email.toString());
+    window.alert("q" + user.uid);
+    window.alert("f " + user.GetUid());
   }).catch(function(error) {
     // Handle Errors here.
     var errorCode = error.code;
