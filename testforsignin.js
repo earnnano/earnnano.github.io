@@ -4,6 +4,8 @@ var accountButton = document.getElementById('accountButton');
 
 var user = firebase.auth().currentUser;
 
+
+
 function pageLoad() {
 	if (user) {
 		isUserSignedIn = true;
