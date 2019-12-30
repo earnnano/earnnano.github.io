@@ -11,7 +11,6 @@ if (user) {
 } else {
 	isUserSignedIn = false;
 }
-updateUserInfo();
 
 firebase.auth().onAuthStateChanged(function(user) {
 	if (user) {
