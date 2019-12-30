@@ -1,5 +1,7 @@
 var provider = new firebase.auth.GoogleAuthProvider();
 
+var user = firebase.auth().currentUser;
+
 var accountButton = document.getElementById('accountButton');
 
 var isUserSignedIn = false;
