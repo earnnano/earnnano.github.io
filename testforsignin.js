@@ -2,7 +2,7 @@ var provider = new firebase.auth.GoogleAuthProvider();
 
 var user = firebase.auth().currentUser;
 
-window.alert(currentUser.getDisplayName());
+window.alert(user.getDisplayName());
 
 function pageLoad() {
 	var accountButton = document.getElementById('accountButton');
