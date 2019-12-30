@@ -28,7 +28,7 @@ function spinForCard() {
 
 function sendNano() {
 	var users = db.collection('users');
-	users.doc('ExampleUID').get().then(function(doc) {
+	users.doc('exampleUID').get().then(function(doc) {
 		if(doc.exists) {
 			console.log(doc.data);
 		} else {
