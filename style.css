@@ -6,6 +6,8 @@ p, input {
     width:191px;
     height:46px;
     background-image: url('https://earnnano.github.io/btn_google_signin_dark_normal_web.png');
+    background-color: transparent;
+    border-width: 0;
 }
 
 #googleSignInButton:hover {
