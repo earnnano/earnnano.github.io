@@ -4,7 +4,7 @@ var user = firebase.auth().currentUser;
 
 window.alert(currentUser.getDisplayName());
 
-function pageLoaded() {
+function pageLoad() {
 	var accountButton = document.getElementById('accountButton');
 	var isUserSignedIn = false;
 	if (user) {
