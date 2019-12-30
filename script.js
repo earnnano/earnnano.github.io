@@ -30,7 +30,8 @@ function sendNano() {
 	var users = db.collection('users');
 	users.doc('exampleUID').get().then(function(doc) {
 		if(doc.exists) {
-			console.log(doc.data);
+			var data = doc.data;
+			console.log(data);
 		} else {
 			console.log('doc doesnt exist lmao ur dumb');
 		}
