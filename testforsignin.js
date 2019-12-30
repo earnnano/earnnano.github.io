@@ -15,6 +15,7 @@ function pageLoad() {
 firebase.auth().onAuthStateChanged(function(user) {
 	if (user) {
 		isUserSignedIn = true;
+		window.alert(user.getDisplayName());
 	} else {
 		isUserSignedIn = false;
 	}
@@ -23,7 +24,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 
 function updateUserInfo() {
 	if(isUserSignedIn) {
-		accountButton.innerHTML = 'Sign Out (' + user.getDisplayName().split(' ')[0] + ')';
+		accountButton.innerHTML = 'Sign Out';
 	} else {
 		accountButton.innerHTML = 'Sign In';
 	}
