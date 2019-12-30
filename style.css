@@ -14,3 +14,12 @@ p, input {
     background-image:url('https://earnnano.github.io/btn_google_signin_dark_focus_web.png');
     cursor: pointer;
 }
+
+.topbarButton {
+    background-color: #dddddd;
+    border: black 2px;
+}
+
+.topbarButton:hover {
+    background-color : #cccccc;
+}
