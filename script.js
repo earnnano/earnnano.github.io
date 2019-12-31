@@ -31,7 +31,11 @@ function sendNano() {
 	users.doc('exampleUID').get().then(function(doc) {
 		if(doc.exists) {
 			var data = doc.data();
-			console.log(data.lastUsedFaucet.seconds); //beep
+			if(data.lastUsedFaucet.seconds + 200 <= getTime()/1000) {
+				window.alert('nano sent');
+			} else {
+				window.alert('nope haha');
+			}
 		} else {
 			console.log('doc doesnt exist lmao ur dumb');
 		}
