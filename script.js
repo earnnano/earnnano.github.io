@@ -1,7 +1,4 @@
-import { wallet } from 'nanocurrency-web';
 
-const wallet1 = wallet.generate();
-window.alert(wallet1.mnemonic);
 
 
 

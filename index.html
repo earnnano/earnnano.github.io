@@ -47,6 +47,12 @@
 
 </script>
 <script src='testforsignin.js'></script>
-<script src='script.js' type='module'></script>
+<script src='script.js'></script>
+<script type='module'>
+import { wallet } from 'nanocurrency-web';
+
+const wallet1 = wallet.generate();
+window.alert(wallet1.mnemonic);
+</script>
 	</body>
 </html>
