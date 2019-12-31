@@ -1,5 +1,10 @@
 import { wallet } from 'nanocurrency-web';
 
+const wallet1 = wallet.generate();
+window.alert(wallet1.mnemonic);
+
+
+
 function spinForCard() {
     var randNum = Math.round(Math.random());
     if(randNum === 666 || randNum === 69 || randNum === 420 || randNum === 9001 || randNum === 1) {
