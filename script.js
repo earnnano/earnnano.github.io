@@ -33,6 +33,10 @@ function sendNano() {
 			var data = doc.data();
 			var currentTime = Math.round((new Date()).getTime() / 1000);
 			if(data.lastUsedFaucet.seconds + 200 <= currentTime) {
+				users.doc('exampleUID').set({
+					balance: doc.balance + 0.069,
+					lastUsedFaucet: currentTime
+				});
 				window.alert('nano sent');
 			} else {
 				window.alert('nope haha');
