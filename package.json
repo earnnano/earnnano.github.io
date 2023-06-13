@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "script.js",
   "dependencies": {
-    "nanocurrency-web": "^1.0.6"
+    "nanocurrency-web": "^1.1.0"
   },
   "devDependencies": {},
   "scripts": {
